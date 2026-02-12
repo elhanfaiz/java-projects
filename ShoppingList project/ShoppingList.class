@@ -1,0 +1,29 @@
+// Source code is decompiled from a .class file using FernFlower decompiler (from Intellij IDEA).
+import java.util.Scanner;
+
+public class ShoppingList {
+   public ShoppingList() {
+   }
+
+   public static void main(String[] var0) {
+      Scanner var1 = new Scanner(System.in);
+      System.out.println("Enter your items ");
+      int var2 = var1.nextInt();
+      var1.nextLine();
+      String[] var3 = new String[var2];
+
+      int var4;
+      for(var4 = 0; var4 < var3.length; ++var4) {
+         System.out.println("Enter items" + (var4 + 1) + " :");
+         var3[var4] = var1.nextLine();
+      }
+
+      System.out.println("/nthe shopping list");
+
+      for(var4 = 0; var4 < var3.length; ++var4) {
+         System.out.println(var4 + 1 + " ." + var3[var4]);
+      }
+
+      var1.close();
+   }
+}

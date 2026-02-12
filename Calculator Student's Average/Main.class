@@ -1,0 +1,42 @@
+// Source code is decompiled from a .class file using FernFlower decompiler (from Intellij IDEA).
+import java.util.Scanner;
+
+public class Main {
+   public Main() {
+   }
+
+   static char gradeFunction(double var0) {
+      if (var0 >= 90.0) {
+         return 'A';
+      } else if (var0 >= 80.0) {
+         return 'B';
+      } else if (var0 >= 70.0) {
+         return 'C';
+      } else {
+         return (char)(var0 >= 60.0 ? 'D' : 'F');
+      }
+   }
+
+   public static void main(String[] var0) {
+      Scanner var1 = new Scanner(System.in);
+      System.out.println("How many grades(1 to 5) ?");
+      int var2 = var1.nextInt();
+      if (var2 >= 1 && var2 <= 5) {
+         double var3 = 0.0;
+
+         for(int var5 = 1; var5 <= var2; ++var5) {
+            System.out.println("Enter grade" + var5 + " :");
+            double var6 = var1.nextDouble();
+            var3 += var6;
+         }
+
+         double var8 = var3 / (double)var2;
+         System.out.println("Average :" + var8);
+         System.out.println("Letter grade :" + gradeFunction(var8));
+         var1.close();
+      } else {
+         System.out.println("Invalid number . you must enter between 1 and 5");
+         var1.close();
+      }
+   }
+}
