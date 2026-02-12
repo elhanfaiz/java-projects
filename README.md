@@ -4,15 +4,15 @@ This repository contains multiple Java projects created for learning and practic
 
 ## Projects
 
-- 1.Banking System
-- 2.ATM System
-- 3.Calculator
-- 4.Student Average Calculator
-- 5.Guess Number Game
-- 6.Library Management System
-- 7.Quiz Game
-- 8.Shopping List
-- 9.Todo List
+- Banking System
+- ATM System
+- Calculator
+- Student Average Calculator
+- Guess Number Game
+- Library Management System
+- Quiz Game
+- Shopping List
+- Todo List
 
 ## Technologies
 - Java
